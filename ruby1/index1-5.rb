@@ -186,34 +186,101 @@
 # access.pub
 # access.priv
 
-class Point
-  attr_accessor :x, :y
-  protected :x=, :y=
+# class Point
+#   attr_accessor :x, :y
+#   protected :x=, :y=
 
-  def initialize(x=0.0, y=0.0)
-    @x, @y = x, y
-  end
+#   def initialize(x=0.0, y=0.0)
+#     @x, @y = x, y
+#   end
 
-  def swap(other)
-    tmp_x, tmp_y = @x, @y
-    @x, @y = other.x, other.y
+#   def swap(other)
+#     tmp_x, tmp_y = @x, @y
+#     @x, @y = other.x, other.y
 
-    return self
-  end
-end
+#     return self
+#   end
+# end
 
-p0 = Point.new
-p1 = Point.new(1.0, 2.0)
-p [p0.x, p0.y]
-p [p1.x, p1.y]
+# p0 = Point.new
+# p1 = Point.new(1.0, 2.0)
+# p [p0.x, p0.y]
+# p [p1.x, p1.y]
 
-p0.swap(p1)
-p [p0.x, p0.y]
-p [p1.x, p1.y]
+# p0.swap(p1)
+# p [p0.x, p0.y]
+# p [p1.x, p1.y]
 
-p0.x = 10.0
+# p0.x = 10.0
 
+# class String
+#   def count_word
+#     ary = self.split(" ")
 
+#     return ary.size
+#   end
+# end
+
+# str = "Just Another Ruby Newbie"
+# p str.count_word
+
+# class RingArray < Array
+#   def [](i)
+#     idx = i % size
+#     super(idx)
+#   end
+# end
+
+# wday = RingArray["日", "月", "火", "水", "木", "金", "土"]
+# p wday[6]
+# p wday[11]
+# p wday[15]
+# p wday[-1]
+
+# class C1
+#   def hello
+#     "Hello"
+#   end
+# end
+
+# class C2 < C1
+#   alias old_hello hello
+
+#   def hello
+#     "#{old_hello}, again"
+#   end
+# end
+
+# obj = C2.new
+# p obj.old_hello
+# p obj.hello
+
+# str1 = "Ruby"
+# str2 = "Ruby"
+
+# class << str1
+#   def hello
+#     "Hello, #{self}!"
+#   end
+# end
+
+# p str1.hello
+# p str2.hello
+
+# module HelloModule
+#   VERSION = "1.0"
+
+#   def hello(name)
+#     puts "hello, #{name}"
+#   end
+#   module_function :hello
+# end
+
+# p HelloModule::VERSION
+# HelloModule.hello("Alice")
+# include HelloModule
+# p VERSION
+# hello("Alice")
 
 
 
