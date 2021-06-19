@@ -282,6 +282,145 @@
 # p VERSION
 # hello("Alice")
 
+#  obj = Object.new
+#  str = "Ruby"
+#  num = Math::PI
+# p obj.to_s
+# p str.to_s
+# p num.to_s
+
+# def fetch_and_downcase(ary, index)
+#   if str = ary[index]
+#     return str.downcase
+#   end
+# end
+
+# ary = ["Boo", "Foo", "Woo"]
+# p fetch_and_downcase(ary, 1)
+
+# a = 1
+# b = 2
+# max = (c > b) ? a : b
+# p max
+
+# sum = 0
+# for i in 1..5
+#   sum += i
+# end
+# puts sum
+
+# p (1..5).to_a
+# p (1...5).to_a
+
+# p ("あ"..).take(100)
+
+# class Point
+#   attr_accessor :x, :y
+
+#   def initialize(x = 0, y = 0)
+#     @x, @y = x, y
+#   end
+
+#   def inspect
+#     "(#{x}, #{y})"
+#   end
+
+#   def +(other)
+#     self.class.new(x + other.x, y + other.y)
+#   end
+  
+#   def -(other)
+#     self.class.new(x - other.x, y - other.y)
+#   end
+
+#   def +@
+#     dup
+#   end
+
+#   def -@
+#     self.class.new(-x, -y)
+#   end
+
+#   def ~@
+#     self.class.new(-y, x)
+#   end
+
+#   def [](index)
+#     case index
+#     when 0
+#       x
+#     when 1
+#       y
+#     else
+#       raise ArgumentError, "out of range `#{index}`"
+#     end
+#   end
+
+#   def []=(index, val)
+#     case index
+#     when 0
+#       self.x = val
+#     when 1
+#       self.y = val
+#     else
+#       raise ArgumentError, "out of range `#{index}`"
+#     end
+#   end
+# end
+
+# point = Point.new(3, 6)
+# point0 = Point.new(3, 6)
+# point1 = Point.new(1, 8)
+
+# p point[0]
+# p point[1] = 2
+# p point[1]
+# p point[2]
+# p +point
+# p -point
+# p ~point
+# p point0
+# p point1
+# p point0 + point1
+# p point0 - point1
+
+ltotal = 0
+wtotal = 0
+ctotal = 0
+
+ARGV.each do |file|
+  begin
+  input = File.open(file)
+  l = 0
+  w = 0
+  c = 0
+  input.each_line do |line|
+    l += 1
+    c += line.size
+    line.sub!(/^\s+/, " ")
+    ary = line.split(/\s+/)
+    w += ary.size
+  end
+  input.close
+  printf("%8d %8d %8d %s\n", 1, w, c, file)
+    ltotal += 1
+    wtotal += w
+    ctotal += c
+  rescue => ex
+    puts ex.message
+  end
+end
+
+printf("%8d %8d %8d %s\n", ltotal, wtotal, ctotal, "total")
+
+
+
+
+
+
+
+
+
 
 
 
