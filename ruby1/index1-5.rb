@@ -413,12 +413,175 @@
 
 # printf("%8d %8d %8d %s\n", ltotal, wtotal, ctotal, "total")
 
-sum = 0
-outcome = {"参加費" => 1000, "ストラップ代" => 1000, "懇親会会費" => 4000}
-outcome.each do |pair|
-  sum += pair[1]
+# sum = 0
+# outcome = {"参加費" => 1000, "ストラップ代" => 1000, "懇親会会費" => 4000}
+# outcome.each do |pair|
+#   sum += pair[1]
+# end
+# puts "合計　：　#{sum}"
+
+
+# @link = '<a href="http://example.com">book store</a>'
+
+# puts @link.html_safe
+
+
+# sum = 0
+# sums = []
+# outcome = {"参加費" => 1000, "ストラップ代" => 1000, "懇親会会費" => 4000}
+# outcome.each do |item, price|
+#   sum += price
+#   sums << item
+# end
+
+# puts sums
+# puts "合計　：　#{sum}"
+
+# file = File.open("index.html")
+# file.each_line do |line|
+#   print line
+# end
+# file.close
+
+# array = ["Ruby", "Peal", "PHP", "Python"]
+# sorted = array.sort
+# p sorted
+
+# array = ["Ruby", "Peal", "PHP", "Python"]
+# sorted = array.sort { |a, b| a <=> b }
+# p sorted
+
+# array = ["Ruby", "Peal", "PHP", "Python"]
+# sorted = array.sort { |a, b| b.length <=> a.length }
+# p sorted
+
+# ary = %w(Ruby is a open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write)
+
+# sorted = ary.sort_by { |item| item.length }
+# p sorted
+
+# def myloop
+#   while true
+#     yield
+#   end
+# end
+
+# num = 1
+# myloop do
+#   puts "num is #{num}"
+#   break if num > 10
+#   num *= 2
+# end
+
+# def total(from, to)
+#   result = 0
+#   from.upto(to) do |num|
+#     if block_given?
+#       result += yield(num)
+#     else
+#       result += num
+#     end
+#   end
+#   return result
+# end
+
+# p total(1, 10)
+# p total(1, 10) { |num| num ** 2 }
+
+# def block_args_test
+#   yield()
+#   yield(1)
+#   yield(1, 2, 3)
+# end
+
+# puts "ブロック変数を|a|で受け取る"
+# block_args_test do |a|
+#   p [a]
+# end
+# puts
+
+# puts "ブロック変数を|a, b, c|で受け取る"
+# block_args_test do |a, b, c|
+#   p [a, b, c]
+# end
+
+# puts
+
+# puts "ブロック変数を|*a|で受け取る"
+# block_args_test do |*a|
+#   p [a]
+# end
+# puts
+
+# n = total(1, 10) do |num|
+#   if num == 5
+#     break
+#   end
+#   num
+# end
+
+# p n
+
+# n = total(1, 10) do |num|
+#   if num % 2 != 0
+#     next 0
+#   end
+#   num
+# end
+
+# p n
+
+# hello = Proc.new do |name|
+#   puts "Hello, #{name}."
+# end
+
+# hello.call("World")
+# hello.call("Ruby")
+
+# def total2(from, to, &block)
+#   result = 0
+#   from.upto(to) do |num|
+#     if block
+#       result +=
+#             block.call(num)
+#     else
+#       result += num
+#     end
+#   end
+#   return result
+# end
+
+# p total2(1, 10)
+# p total2(1, 10) { |num| num ** 2 }
+
+def call_each(ary, &block)
+  ary.each(&block)
 end
-puts "合計　：　#{sum}"
+
+call_each [1, 2, 3] do |item|
+  p item
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
