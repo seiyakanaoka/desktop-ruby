@@ -554,16 +554,20 @@
 # p total2(1, 10)
 # p total2(1, 10) { |num| num ** 2 }
 
-def call_each(ary, &block)
-  ary.each(&block)
+# def call_each(ary, &block)
+#   ary.each(&block)
+# end
+
+# call_each [1, 2, 3] do |item|
+#   p item
+# end
+
+
+def sum(name)
+  return "hello, #{name}"
 end
 
-call_each [1, 2, 3] do |item|
-  p item
-end
-
-
-
+puts sum("unn")
 
 
 
