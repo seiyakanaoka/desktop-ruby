@@ -640,42 +640,135 @@
 # puts
 
 # p 5 ** -2.0
-# p 5 ** -2
+# # p 5 ** -2
 
-p 5.div(2)
-p 5.div(2.2)
-p -5.div(2)
-p -5.div(2.2)
+# p 5.div(2)
+# p 5.div(2.2)
+# p -5.div(2)
+# p -5.div(2.2)
 
-puts
+# puts
 
-p 5.quo(2)
-p 5.quo(2.2)
-p -5.quo(2)
-p -5.quo(2.2)
+# p 5.quo(2)
+# p 5.quo(2.2)
+# p -5.quo(2)
+# p -5.quo(2.2)
 
-puts
+# puts
 
-p 5.modulo(2)
-p 5.modulo(2.2)
-p -5.modulo(2)
-p -5.modulo(2.2)
+# p 5.modulo(2)
+# p 5.modulo(2.2)
+# p -5.modulo(2)
+# p -5.modulo(2.2)
 
-puts
+# puts
 
-p 10.divmod(3.5)
-p 10.divmod(-3.5)
-p -10.divmod(3.5)
-p -10.divmod(-3.5)
+# p 10.divmod(3.5)
+# p 10.divmod(-3.5)
+# p -10.divmod(3.5)
+# p -10.divmod(-3.5)
 
-puts
+# puts
 
-p 10.remainder(3.5)
-p 10.remainder(-3.5)
-p -10.remainder(3.5)
-p -10.remainder(-3.5)
+# p 10.remainder(3.5)
+# p 10.remainder(-3.5)
+# p -10.remainder(3.5)
+# p -10.remainder(-3.5)
 
 # 符号（＋、ー）はX（今回なら１０）の値に一致する
+
+# def bits(i)
+#   printf("%08b\n", i & 0b11111111)
+# end
+
+
+# ビット演算子（＆）の使い方
+
+# 結論：二つの二進数の、同じ桁の部分が「１同士なら1を出力し、０同士ならば0を出力する」
+
+# 【例】
+# ①　11110000　　後ろ４桁が0
+# ②　11111111　　全て1
+
+# この場合、①の前４桁と②の前４桁は「１同士」なので、出力された際、その桁の部分は「１」になる
+# しかし、①の後ろ４桁は「0」なので、自動的にその桁の部分は「0」になる
+
+
+
+
+
+# i = 0b11110000
+# bits(i)
+# bits(~i)
+# bits(i & 0b00010000)
+# bits(i | 0b00010001)
+# bits(i >> 3)
+# bits(i << 3)
+
+# puts
+
+# a = 0b11110000
+# b = 0b11111111
+# p a
+# p b
+# p (a & b).to_s(2)
+# printf("%08b\n", 0b11110000 * 0b11111111)
+# printf("%08b\n", 0b11111111 / 0b11110000)
+# printf("%08b\n", a & b)
+# puts a & b
+
+# puts
+# p (a & b).to_s(2)
+# puts (a & b).to_s(2)
+# p (a * b).to_s(2)
+# puts (a * b).to_s(2)
+
+# p 0b10 & 0b01
+# p 0b11 & 0b01
+# p 0b100 & 0b01
+# p 0b101 & 0b01
+# p 0b110 & 0b01
+
+# puts
+
+# p 0b10 & 0b10
+# p 0b11 & 0b10
+# p 0b100 & 0b10
+# p 0b101 & 0b10
+# p 0b110 & 0b10
+
+# puts
+
+# p 0b10 & 0b11
+# p 0b11 & 0b11
+# p 0b100 & 0b11
+# p 0b101 & 0b11
+# p 0b110 & 0b11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
