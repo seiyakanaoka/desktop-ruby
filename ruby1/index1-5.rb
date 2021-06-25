@@ -563,29 +563,45 @@
 # end
 
 
-def sum(name)
-  return "hello, #{name}"
-end
+# def sum(name)
+#   return "hello, #{name}"
+# end
 
-puts sum("unn")
+# puts sum("unn")
 
+# x = 0
+# y = 0
+# ary = [1, 2, 3]
 
+# ary.each do |x|
+#   y = x
+# end
 
+# p [x, y]
 
+# x = 1
+# # y = 1
+# ary = [1, 2, 3]
 
+# ary.each do |x|
+#   y = x
+# end
 
+# p [x, y]
 
-
-
-
-
-
-
-
-
-
-
-
+# x = y = z = 0
+# ary = [1, 2, 3]
+# ary.each do |x; y|
+#   y = x　
+#   z = x zはブロック内で使われるローカル変数
+#   p [x, y, z]
+# end
+# puts
+# p [x, y, z]
+# puts
+# p x
+# p y
+# p z
 
 
 
