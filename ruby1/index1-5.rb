@@ -603,14 +603,28 @@
 # p y
 # p z
 
+# a = Rational(2, 5)
+# b = Rational(1, 3)
+# p [a, b]
+# c = a + b
+# p c
+# p c.to_f
+# p [c.numerator, c.denominator]
 
+# puts
 
+# c = Complex(1, 2) ** 2
+# p c
+# p [c.real, c.imaginary]
 
+# 答えは[-3, 4]になるが、理由は以下になる
 
+# 虚数のiは、　iの二乗（i ** 2）の場合、「-1」という値に変換される
+# その上で再度計算すると理解できる
 
-
-
-
+d = Complex(1, 2)
+p d
+p [d.real, d.imaginary]
 
 
 
