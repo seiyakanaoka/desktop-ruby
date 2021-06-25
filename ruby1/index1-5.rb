@@ -622,19 +622,60 @@
 # 虚数のiは、　iの二乗（i ** 2）の場合、「-1」という値に変換される
 # その上で再度計算すると理解できる
 
-d = Complex(1, 2)
-p d
-p [d.real, d.imaginary]
+# d = Complex(1, 2)
+# p d
+# p [d.real, d.imaginary]
 
+# p 1.234
+# p 1.234e4
+# p 1.234e-4
 
+# r = (2 / 5r) + (1 / 3r)
+# p r
+# p r.to_f
 
+# c = (1 + 2i) ** 2
+# p c
 
+# puts
 
+# p 5 ** -2.0
+# p 5 ** -2
 
+p 5.div(2)
+p 5.div(2.2)
+p -5.div(2)
+p -5.div(2.2)
 
+puts
 
+p 5.quo(2)
+p 5.quo(2.2)
+p -5.quo(2)
+p -5.quo(2.2)
 
+puts
 
+p 5.modulo(2)
+p 5.modulo(2.2)
+p -5.modulo(2)
+p -5.modulo(2.2)
+
+puts
+
+p 10.divmod(3.5)
+p 10.divmod(-3.5)
+p -10.divmod(3.5)
+p -10.divmod(-3.5)
+
+puts
+
+p 10.remainder(3.5)
+p 10.remainder(-3.5)
+p -10.remainder(3.5)
+p -10.remainder(-3.5)
+
+# 符号（＋、ー）はX（今回なら１０）の値に一致する
 
 
 
