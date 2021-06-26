@@ -745,25 +745,203 @@
 # p 0b101 & 0b11
 # p 0b110 & 0b11
 
+# p Random.rand
+# p Random.rand(100)
+# p Random.rand(100)
+
+# r1 = Random.new(1)
+# p [r1.rand, r1.rand]
+
+# r2 = Random.new(1)
+# p [r2.rand, r2.rand]
+
+# r3 = Random.new
+# p [r3.rand, r3.rand]
+
+# require "securerandom"
+
+# p SecureRandom.random_bytes(12)
+
+# # p SecureRandom.base64(12)
+
+# ary = []
+# 10.times do |i|
+#   ary << i
+# end
+# p ary
+
+# ary = []
+# 2.upto(10) do |i|
+#   ary << i
+# end
+# p ary
+
+# ary = []
+# 10.downto(2) do |i|
+#   ary << i
+# end
+# p ary
+
+# ary= []
+# 2.step(10, 3) do |i|
+#   ary << i
+# end
+# p ary
+
+# ary= []
+# 10.step(2, -3) do |i|
+#   ary << i
+# end
+# p ary
+
+# a = 1/10r + 2/10r
+# b = 3/10r
+# p [a, b]
+# p a == b
+
+# class Vector
+#   include Comparable
+#   attr_accessor :x, :y
+
+#   def initialize(x, y)
+#     @x, @y = x, y
+#   end
+
+#   def scalar
+#     Math.sqrt(x ** 2 + y ** 2)
+#   end
+
+#   def <=>(other)
+#     scalar <=> other.scalar
+#   end
+# end
+
+# v1 = Vector.new(2, 6)
+# v2 = Vector.new(4, -4)
+# p v1 <=> v2
+# p v1 < v2
+# p v1 > v2
+
+# p v1
+# p v2
+
+# puts -2 ** 2
+
+# ーーーーーーーーーーーーーーーーーーーーーーーー練習問題262ページーーーーーーーーーーーーーーーーーーーーーーーー
+
+# 自分の回答      ▲
+
+# def cels_to_fahr(sessi)
+#   puts sessi * 9 / 5 + 32
+# end
+
+# cels_to_fahr(20)
+
+# 正解
+
+# def cels2fahr(cels)
+#   return cels * 9.0 / 5.0 + 32.0
+# end
+  
 
 
 
 
+# # 自分の回答        ×
+
+# def fahr_to_cels(fal)
+#   puts (fal - 32) * 5 / 9
+# end
+
+# fahr_to_cels(20)
+
+# # 正解
+# puts
+
+# def fahr2cels(fahr)
+#   return (fahr.to_f - 32) * 5.0 / 9.0
+# end
+
+# 1.upto(100) do |i|
+#   print i, " ", fahr2cels(i), "\n"
+# end
+
+# puts fahr2cels(20)
+
+
+# # 自分の回答      ◯
+
+# def saikoro
+#   puts Random.rand(0..5) + 1
+# end
+
+# saikoro
+
+# # 正解
+
+# def dice
+#   return Random.rand(6) + 1
+# end
+
+# # 自分の回答          ◯
+
+# def saikoro
+#   sum = 0
+#   10.times do |i|
+#     sum += Random.rand(0..5) + 1
+#   end
+#   return sum
+# end
+
+# puts saikoro
+
+# # 正解
+
+# def dice
+#   return Random.rand(6) + 1
+# end
+
+# def dice10
+#   ret = 0
+#   10.times do
+#     ret += dice
+#   end
+#   ret
+# end
+
+# 自分の回答          ×
+
+# def sosu(warukazu)
+#   if warukazu / warukazu && warukazu / 1 && warukazu / 2
+#     puts "これは素数です"
+#   else
+#     puts "素数ではありません"
+#   end
+# end
+
+# puts "好きな文字を入力してください"
+# i = gets.to_i
+
+# puts sosu(i)
+
+# 正解
+
+# def prime?(num)
+#   return false if num < 2
+#   2.upto(Math.sqrt(num)) do |i|
+#     if num % i == 0
+#       return false
+#     end
+#   end
+#   return true
+# end
+# 1.upto(20) do |n|
+#   puts n if prime?(n)
+# end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+# ーーーーーーーーーーーーーーーーーーーーーーーーここまでーーーーーーーーーーーーーーーーーーーーーーーー
 
 
 
