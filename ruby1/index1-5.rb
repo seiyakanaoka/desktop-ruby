@@ -943,10 +943,29 @@
 
 # ーーーーーーーーーーーーーーーーーーーーーーーーここまでーーーーーーーーーーーーーーーーーーーーーーーー
 
+# lang1 = %w(ruby perl python scheme pike rebol)
+# p lang1
 
+# puts
 
+# lang2 = %i(ruby perl python scheme pike rebol)
+# p lang2
 
+# puts
 
+# hairetu = {hai: "hai", retu: "retu"}
+# p hairetu.to_a
+
+# puts
+
+# column = "2019/02/01,foo.html,proxy.example.jp".split(",")
+# p column
+
+# puts
+
+# puts
+
+# puts
 
 
 
