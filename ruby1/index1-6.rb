@@ -126,6 +126,65 @@
 # a = [2, 3, 1, 5, 4]
 # p a.sort_by { |i| -i }
 
+list = ["a", "b", "c", "d"]
+for i in 0..3
+  puts "#{i + 1}番目の要素は#{list[i]}です"
+end
+
+puts
+
+list = [1,3, 5, 7, 9]
+sum = 0
+for i in 0..4
+  sum += list[i]
+end
+puts "合計: #{sum}"
+
+puts
+
+list = [1, 3, 5, 7, 9]
+sum = 0
+list.each do |i|
+  sum += i
+end
+puts "合計: #{sum}"
+
+puts
+
+list = ["a", "b", "c", "d", "e"]
+list.each_with_index do |e, i|
+  puts "#{i + 1}番目の要素は#{e}です"
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
