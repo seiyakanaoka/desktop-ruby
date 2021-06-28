@@ -306,11 +306,27 @@
 
 # p result
 
+# puts %q|Ruby said, 'Hello, World!!'|
 
+# 10.times do |i|
+#   print(<<~"EOB")
+#     i: #{i}
+#   EOB
+# end
 
+# puts
 
+# str = <<-EOB
+# Hello!
+# Hello!
+# EOB
 
+n = 65535
+printf("%dの16進数表記は%xです\n", n, n)
 
+puts
+
+p sprintf("%dの16進数表記は%xです\n", n, n)
 
 
 
