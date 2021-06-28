@@ -161,25 +161,150 @@
 # puts
 # p a[2][2]
 
-a = Array.new(3) do
-  [0, 0, 0]
-end
-p a
-puts
-a[0][1] = 2
-p a
+# a = Array.new(3) do
+#   [0, 0, 0]
+# end
+# p a
+# puts
+# a[0][1] = 2
+# p a
 
-a = Array.new(5) { |i| i + 1 }
-p a
+# a = Array.new(5) { |i| i + 1 }
+# p a
+
+# ary1 = [1, 2, 3, 4, 5]
+# ary2 = [10, 20, 30, 40, 50]
+# ary3 = [100, 200, 300, 400, 500]
+
+# puts
+
+# puts ary1.length
+
+# puts
+
+# i = 0
+# result = []
+
+# while i < ary1.length
+#   result << ary1[i] + ary2[i] + ary3[i]
+#   i += 1
+# end
+
+# p result
+
+# result = []
+# ary1.zip(ary2, ary3) do |a, b, c|
+#   result << a + b + c
+# end
+
+# p result
 
 
+# # # 自分の回答    ◎
+
+# a = []
+# sum = 0
+# 100.times do
+#   sum += 1
+#   a << sum
+# end
+
+# p a
+# p a[0]
 
 
+# # # 模範回答
+
+# # a = (1..100).to_a
 
 
+# puts
 
 
+# # 自分の回答    ◎
 
+# a2 = a.map { |i| i * 100 }
+# p a2
+
+# # 模範回答
+
+# puts
+
+# # 自分の回答
+
+# sum = []
+
+# # a3 = a.each do |i|
+# #   if i % 3 == 0
+# #     sum << i
+# #   end
+# # end
+
+# # p a3
+
+
+# # # 模範回答
+
+# # a3 = a.reject{|i| i % 3 != 0 }
+# # p a3
+
+# puts
+
+# # 自分の回答    ◯
+
+# p a.reverse
+
+# # 模範回答
+
+# puts
+
+# # 自分の回答    ◯
+
+# sum = 0
+# a.each do |i|
+#   sum += i
+# end
+# p sum
+
+# # 模範回答
+
+# puts
+
+# 自分の回答    ×
+
+# ary = a
+# result = Array.new
+# 10.times do |i|
+#   result << ary[0, 10]
+# end
+
+# p result
+
+# 模範回答
+
+# ary = (1..100).to_a
+# result = Array.new
+# 10.times do |i|
+#   result << ary[i*10, 10]
+# end
+# p result
+
+# puts
+
+# # 自分の回答
+
+# sum1 = [1, 2, 3, 4, 5]
+# sum2 = [10, 20, 30, 40, 50]
+
+# i = 0
+# result = []
+
+# while i < sum1.length
+#   result << sum1[i] + sum2[i]
+#   i += 1
+# end
+
+# p result
 
 
 
