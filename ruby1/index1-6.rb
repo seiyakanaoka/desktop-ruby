@@ -321,16 +321,29 @@
 # Hello!
 # EOB
 
-n = 65535
-printf("%dの16進数表記は%xです\n", n, n)
+# n = 65535
+# printf("%dの16進数表記は%xです\n", n, n)
+
+# puts
+
+# p sprintf("%dの16進数表記は%xです\n", n, n)
+
+# p str1 = "オブジェクト指向プログラミング言語".bytesize
+# str2 = "オブジェクト指向プログラミング言語"
+# p str2[0]
+
+hello = "Hello"
+world = "World!"
+puts hello + world
+puts hello << world
+
 
 puts
 
-p sprintf("%dの16進数表記は%xです\n", n, n)
 
-
-
-
+hello = "Hello"
+world = "World!"
+puts hello.concat(world)
 
 
 
