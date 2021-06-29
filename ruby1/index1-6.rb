@@ -355,25 +355,87 @@
 # newstr =str.chomp
 # p newstr
 
+# # puts
+
+# # str2 = "abcd\n"
+# # newstr = str2.chop
+# # p newstr
+# # newstr = str2.chomp
+# # p newstr
+
+# # str = "abcde"
+# # str[2, 1] = "C"
+# # p str
+
+# # p "HELLO ruby".swapcase
+# # p "hello ruby".capitalize
+# # p "あいうえお".tr("い", "イ")
+
+# # 自分の回答    ◎
+
+# p str = "Ruby is an object oriented programming language".split(' ')
+
+# # 模範回答
+
+# str = "Ruby is an object oriented programming language"
+# ary = str.split
+# p ary
+
 # puts
 
-# str2 = "abcd\n"
-# newstr = str2.chop
-# p newstr
-# newstr = str2.chomp
-# p newstr
+# # 自分の回答    ◎
 
-# str = "abcde"
-# str[2, 1] = "C"
-# p str
+# p str.sort
 
-p "HELLO ruby".swapcase
-p "hello ruby".capitalize
-p "あいうえお".tr("い", "イ")
+# # 模範回答
 
+# str = "Ruby is an object oriented programming language"
+# ary = str.split
+# p ary.sort
 
+# puts
 
+# # 自分の回答    ×
 
+# p str.sort{|x, y| x.casecmp(y)}
+
+# # 模範回答
+
+# str = "Ruby is an object oriented programming language"
+# ary = str.split
+# p ary.sort_by{|s| s.downcase }
+
+# puts
+
+# # 自分の回答    ◎
+
+# p str = "Ruby is an object oriented programming language".chars
+
+# puts str.group_by(&:itself).map { |x, y|  "\'#{x}\':" + "*" * y.length }
+
+# # # 模範回答
+
+# str = "Ruby is an object oriented programming language"
+# count = Hash.new
+# str.each_char do |c|
+#   count[c] = 0 unless count[c]
+#   count[c] += 1
+# end
+# count.keys.sort.each do |c|
+#   printf("'%s': %s\n", c, "*" * count[c])
+# end
+
+# puts
+
+# # 自分の回答
+
+# def kan2num
+#   tr("一-九九九九", "1-9999")
+# end
+
+# puts "七千".kan2num
+
+# 模範回答
 
 
 
