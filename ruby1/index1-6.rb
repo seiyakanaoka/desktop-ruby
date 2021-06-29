@@ -363,13 +363,13 @@
 # newstr = str2.chomp
 # p newstr
 
-str = "abcde"
-str[2, 1] = "C"
-p str
+# str = "abcde"
+# str[2, 1] = "C"
+# p str
 
-
-
-
+p "HELLO ruby".swapcase
+p "hello ruby".capitalize
+p "あいうえお".tr("い", "イ")
 
 
 
