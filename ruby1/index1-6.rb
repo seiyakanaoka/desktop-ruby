@@ -332,18 +332,61 @@
 # str2 = "オブジェクト指向プログラミング言語"
 # p str2[0]
 
-hello = "Hello"
-world = "World!"
-puts hello + world
-puts hello << world
+# hello = "Hello"
+# world = "World!"
+# puts hello + world
+# puts hello << world
 
 
-puts
+# puts
 
 
-hello = "Hello"
-world = "World!"
-puts hello.concat(world)
+# hello = "Hello"
+# world = "World!"
+# puts hello.concat(world)
+
+# str = "高橋:タカハシ:1234567:000-123-4567"
+# column = str.split(":")
+# p column
+
+# str = "abcde"
+# newstr = str.chop
+# p newstr
+# newstr =str.chomp
+# p newstr
+
+# puts
+
+# str2 = "abcd\n"
+# newstr = str2.chop
+# p newstr
+# newstr = str2.chomp
+# p newstr
+
+str = "abcde"
+str[2, 1] = "C"
+p str
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
