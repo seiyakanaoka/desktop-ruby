@@ -504,8 +504,46 @@
 
 
 
+# def toribo(a ,b, c, d)
+#   result = [a, b, c]
+#   i = 0
+#   while i <= (d + 2) do
+#     ans = result[i] + result[i + 1] + result[i + 2]
+#     result << ans
+#     i += 1
+#   end
+#   return result[d + 2]
+# end
 
+# def toribo2(a ,b, c, d)
+#   result = [a, b, c]
+#   i = 0
+#   while i <= (d + 2) do
+#     ans = result[i] + result[i + 1] + result[i + 2]
+#     result << ans
+#     i += 1
+#   end
+#   return result
+# end
 
+# puts "トリボナッチ数列の問題を開始します。好きな数字3つと、何番目を調べたいか入力してください"
+# puts "なお、打ち込んだ3つを除いた数字から一番目とします。"
+# puts
+
+# puts "1番目の数字"
+# a = gets.to_i
+# puts "2番目の数字"
+# b = gets.to_i
+# puts "3番目の数字"
+# c = gets.to_i
+# puts "求めたい数字のインデックス番号"
+# d = gets.to_i
+# puts
+# puts "結果は・・・"
+# p toribo(a, b, c, d)
+
+# puts
+# p toribo2(a, b, c, d)
 
 
 
