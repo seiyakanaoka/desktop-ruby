@@ -545,8 +545,48 @@
 # puts
 # p toribo2(a, b, c, d)
 
+# def pita(a, b, c)
 
+#     if c == "a"
+#       puts "斜めの辺を求めます。"
+#       d = a ** 2 + b ** 2
+#     elsif c == "b"
+#       puts "3番目に長い辺を求めます。"
+#       d = b ** 2 - a ** 2
+#     elsif c == "c"
+#       puts "3番目に長い辺を求めます。"
+#       d = b ** 2 - a ** 2
+#     end
+#     return d
 
+# end
 
+# puts "ピタゴラスの定理を用いて、辺を求めます"
+# puts "ただし、1:2:√3の三角形に限ります。"
+# puts "小さい数字から2つ入力し、その後、斜めを求める場合はa、二番目に長い辺を求める場合はb、それ以外はcを入力してください。"
+# puts
+# a = gets.to_i
+# b = gets.to_i
+# c = gets
+# puts
+# puts "結果は・・・"
+# puts c
+# puts pita(a, b, c)
 
+def pythagorean_triples (n)
+  return([]) if n.odd?
+  
+  ans = Array.new
+  1.step(n) do |a|
+  b = n - 0.5 * (n ** 2) / (n - a.to_f)
+    case
+    when (a > b)
+      return(ans)
+    when (b.to_i == b)
+      ans.push([a, b.to_i, Math.sqrt(a ** 2 + b ** 2).to_i])
+    end
+  end
+end
+  
+  p pythagorean_triples(1000)
 
