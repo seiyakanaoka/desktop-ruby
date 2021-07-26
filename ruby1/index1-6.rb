@@ -436,12 +436,30 @@
 # puts "七千".kan2num
 
 # 模範回答
+# def two_sum(nums, target)
+#   nums.each_with_index do |num1, a|
+#       nums.each_with_index do |num2, b|
+#         return [a,b] if num1 + num2 == target
+#       end
+#   end
+#   return "Cannot find two_sum"
+# end
+
+# puts two_sum([2, 6, 11, 15], 17)
 
 
+num1 = [1, 2, 3]
 
-
-
-
+num1.each_with_index do |n, a|
+  num1.each_with_index do |u, b|
+    puts
+    puts n
+    puts a
+    puts u
+    puts b
+    puts
+  end
+end
 
 
 
