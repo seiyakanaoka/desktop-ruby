@@ -597,4 +597,44 @@
 # puts str_a
 # puts str_b
 
+# def hantei(i)
+#   t = 0
+#   1.step(Math.sqrt(i)) do |s|
+#     if i % s == 0
+#       t += 1
+#     end
+#   end
 
+#   if t == 1
+#     return "これは素数です。"
+#   else
+#     return "素数ではありません。"
+#   end
+# end
+
+# puts hantei(15)
+
+# def hantei
+#   t = 0
+#   i = 1
+#   while i < 101 do
+#     1.step(Math.sqrt(i)) do |s|
+#       if i % s == 0
+#         t += 1
+#       end
+#     end
+
+#     if t == 1
+#       puts i
+#       puts "これは素数です。"
+#     else
+#       puts i
+#       puts "素数ではありません。"
+#     end
+#     puts
+#     t = 0
+#     i += 1
+#   end
+# end
+
+# hantei
