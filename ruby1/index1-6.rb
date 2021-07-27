@@ -638,3 +638,50 @@
 # end
 
 # hantei
+
+
+# puts Math.sqrt(15)
+
+# puts 15 ** (1 / 2.0)
+
+# puts 2 / 3.0
+
+# def leap_year?(y)
+#   return false unless y % 4   == 0
+#   return true  unless y % 100 == 0
+#   y % 400 == 0
+# end
+
+# puts leap_year?(2016)
+
+# num = (ARGV[0] || 3).to_i
+# puts num
+
+# def tenchi(a, b, c, d, e, f, g, h, i)
+#   puts a, b, c
+#   puts d, e, f
+#   puts g, h, i
+# end
+
+
+def mitukeru
+  ans = rand(10)
+  puts "数当てゲームを行います。0〜9の数の中で、好きな数字を選び、数を当てましょう。"
+  puts "好きな数字を入力してください"
+  loop do
+    num = gets.to_i
+    if ans == num
+      puts "#{ans}ですね！正解です！"
+      puts "ゲームを終了します。"
+      break
+    elsif ans > num
+      puts "入力した数字より大きいです。もう一度入力してください"
+    elsif ans < num
+      puts "入力した数字より小さいです。もう一度入力してください"
+    end
+  end
+end
+
+puts mitukeru
+
+
