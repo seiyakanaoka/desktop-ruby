@@ -573,20 +573,28 @@
 # puts c
 # puts pita(a, b, c)
 
-def pythagorean_triples (n)
-  return([]) if n.odd?
+# def pythagorean_triples (n)
+#   return([]) if n.odd?
   
-  ans = Array.new
-  1.step(n) do |a|
-  b = n - 0.5 * (n ** 2) / (n - a.to_f)
-    case
-    when (a > b)
-      return(ans)
-    when (b.to_i == b)
-      ans.push([a, b.to_i, Math.sqrt(a ** 2 + b ** 2).to_i])
-    end
-  end
-end
+#   ans = Array.new
+#   1.step(n) do |a|
+#   b = n - 0.5 * (n ** 2) / (n - a.to_f)
+#     case
+#     when (a > b)
+#       return(ans)
+#     when (b.to_i == b)
+#       ans.push([a, b.to_i, Math.sqrt(a ** 2 + b ** 2).to_i])
+#     end
+#   end
+# end
   
-  p pythagorean_triples(1000)
+#   p pythagorean_triples(1000)
+# strs = ["dog", "dogs", "doguest"]
+
+# str_a = strs.shift
+# str_b = strs.shift
+
+# puts str_a
+# puts str_b
+
 
