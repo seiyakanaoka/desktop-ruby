@@ -664,24 +664,62 @@
 # end
 
 
-def mitukeru
-  ans = rand(10)
-  puts "数当てゲームを行います。0〜9の数の中で、好きな数字を選び、数を当てましょう。"
-  puts "好きな数字を入力してください"
-  loop do
-    num = gets.to_i
-    if ans == num
-      puts "#{ans}ですね！正解です！"
-      puts "ゲームを終了します。"
-      break
-    elsif ans > num
-      puts "入力した数字より大きいです。もう一度入力してください"
-    elsif ans < num
-      puts "入力した数字より小さいです。もう一度入力してください"
-    end
-  end
-end
+# def mitukeru
+#   ans = rand(10)
+#   puts "数当てゲームを行います。0〜9の数の中で、好きな数字を選び、数を当てましょう。"
+#   puts "好きな数字を入力してください"
+#   loop do
+#     num = gets.to_i
+#     if ans == num
+#       puts "#{ans}ですね！正解です！"
+#       puts "ゲームを終了します。"
+#       break
+#     elsif ans > num
+#       puts "入力した数字より大きいです。もう一度入力してください"
+#     elsif ans < num
+#       puts "入力した数字より小さいです。もう一度入力してください"
+#     end
+#   end
+# end
 
-puts mitukeru
+# puts mitukeru
+
+# def sosu(num)
+#   ans = 0
+#   1.step(Math.sqrt(num)) do |n|
+#     if num % n == 0
+#       ans += 1
+#     end
+#   end
+#   if ans == 1
+#     puts "これは素数です。"
+#   else
+#     puts "素数ではありません。"
+#   end
+# end
+
+# sosu(17)
+
+# def fibo
+#   puts "フィボナッチ数列の作成。100回繰り返します。"
+#   puts "好きな数字を2つ入力してください"
+#   i = 0
+#   ans1 = gets.to_i
+#   ans2 = gets.to_i
+#   ans3 = [ans1, ans2]
+#   while i < 100 do
+#     ans3 << ans3[i] + ans3[i + 1]
+#     i += 1
+#   end
+#   return ans3
+# end
+
+# p fibo
+
+a = [1, 2, 3, 1, 2, 1, 2, 6, 5, "ruby","python","ruby"]
+b = a.uniq
+p b
+
+
 
 
