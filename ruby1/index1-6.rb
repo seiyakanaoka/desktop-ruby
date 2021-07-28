@@ -716,10 +716,51 @@
 
 # p fibo
 
-a = [1, 2, 3, 1, 2, 1, 2, 6, 5, "ruby","python","ruby"]
-b = a.uniq
+# a = [1, 2, 3, 1, 2, 1, 2, 6, 5, "ruby","python","ruby"]
+# b = a.uniq
+# p b
+
+# a = ["ruby", nil, "java", nil, nil, "python"]
+# b = a.compact
+# p b
+
+# a = [["php", "java", "ruby", "python"],["バージョン3","バージョン2","バージョン1","バージョン0.1"]]
+# b = a.transpose
+# p b
+
+a = [5,6,1,3,4]
+b = a.sort
 p b
 
+# Two＿sum　自分の答え
 
+# def two_sum(nums, target)
+#   i = 0
+#   s = 0
+#   while i < nums.length do
+#       while s < nums.length do
+#           if nums[i] + nums[s] == target
+#               return [i, s]
+#           end
+#           s += 1
+#       end
+#       i += 1
+#   end
+# end
 
+# 模範回答
 
+# def two_sum(nums, target)
+#   h = {}
+#   nums.each_with_index do |n1, index1|
+#       h[n1] = index1
+#   end
+#   nums.each_with_index do |c2, index2|
+#       tmp = target - c2
+#       if h[tmp].nil? || index2 == h[tmp]
+#           next
+#       else
+#           return [index2, h[tmp]]
+#       end
+#   end
+# end
