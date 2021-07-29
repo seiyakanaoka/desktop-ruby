@@ -728,9 +728,9 @@
 # b = a.transpose
 # p b
 
-a = [5,6,1,3,4]
-b = a.sort
-p b
+# a = [5,6,1,3,4]
+# b = a.sort
+# p b
 
 # Two＿sum　自分の答え
 
@@ -854,5 +854,60 @@ p b
 #   end
 #   return ret
 # end
+
+# def sosu(x)
+#   a = 0
+#   1.step(Math.sqrt(x)) do |i|
+#     if x % i == 0
+#       a += 1
+#     end
+#   end
+#   if a == 1
+#     puts "#{x}ですね！これは素数です。"
+#   else
+#     puts "#{x}は素数ではありません。"
+#   end
+# end
+
+# sosu(97)
+
+# def sosu
+#   (1..100).each do |x|
+#     a = 0
+#     1.step(Math.sqrt(x)) do |i|
+#       if x % i == 0
+#         a += 1
+#       end
+#     end
+#     if a == 1
+#       puts "#{x}ですね！これは素数です。"
+#     else
+#       puts "#{x}は素数ではありません。"
+#     end
+#   end
+# end
+
+# sosu
+
+# def FizzBuzz(x)
+#   if x % 3 == 0 && x % 5 == 0
+#     puts "#{x}ですね！FizzBuzz"
+#   elsif x % 3 == 0
+#     puts "#{x}ですね！Fizz"
+#   elsif x % 5 == 0
+#     puts "#{x}ですね！Buzz"
+#   else
+#     puts x
+#   end
+# end
+
+# puts "FizzBuzzゲームを開始します。"
+# puts "好きな数字を入力してください。"
+
+# x = gets.to_i
+
+# FizzBuzz(x)
+
+# puts "FizzBuzzゲームを終了します。"
 
 
