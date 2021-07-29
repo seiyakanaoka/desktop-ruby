@@ -1005,4 +1005,32 @@
 
 # puts "終了します。"
 
+# def tetora(a, b, c, d, e)
+#   i = 0
+#   ans = []
+#   ans << a
+#   ans << b
+#   ans << c
+#   ans << d
+#   while i < e - 4 do
+#     ans << (ans[i] + ans[i + 1] + ans[i + 2] + ans[i + 3])
+#     i += 1
+#   end
+#   return ans
+# end
+
+# puts "テトラナッチ数列を用い、数字を算出します。"
+# puts "最初の数字4つと、求めたい数字の数を入力してください。"
+
+# a = gets.to_i
+# b = gets.to_i
+# c = gets.to_i
+# d = gets.to_i
+# e = gets.to_i
+
+# puts "結果は・・・"
+
+# p tetora(a, b, c, d, e)
+
+# puts "終了します。"
 
