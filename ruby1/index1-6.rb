@@ -924,25 +924,85 @@
 
 # puts hanoi(3)
 
-def kazuate
-  result = rand(10)
-  puts "数当てゲームを開始します。"
-  puts "0~9までの好きな数字を入力してください。"
-  loop do
-    ans = gets.to_i
-    if result == ans
-      puts "#{ans}ですね！正解です。"
-      break
-    elsif ans < result
-      puts "#{ans}よりも大きいです。"
-    elsif ans > result
-      puts "#{ans}よりも小さいです。"
-    else
-      puts "0~9の数字を入力してください"
-    end
-  end
-  puts "数当てゲームを終了します。"
-end
+# def kazuate
+#   result = rand(10)
+#   puts "数当てゲームを開始します。"
+#   puts "0~9までの好きな数字を入力してください。"
+#   loop do
+#     ans = gets.to_i
+#     if result == ans
+#       puts "#{ans}ですね！正解です。"
+#       break
+#     elsif ans < result
+#       puts "#{ans}よりも大きいです。"
+#     elsif ans > result
+#       puts "#{ans}よりも小さいです。"
+#     else
+#       puts "0~9の数字を入力してください"
+#     end
+#   end
+#   puts "数当てゲームを終了します。"
+# end
 
-kazuate
+# kazuate
+
+# def hairetu(array)
+#   fst = array.first
+#   array.fill(0)
+#   array[0] = fst
+#   array
+# end
+
+# puts hairetu([2, 4, 5, 6, 4])
+
+# def fibo(x, y, z)
+#   i = 0
+#   ans = []
+#   ans << x
+#   ans << y
+#   while i < z - 2 do
+#     ans << ans[i] + ans[i + 1]
+#     i += 1
+#   end
+#   return ans
+# end
+
+# puts "フィボナッチ数列を用い、求めたい数字を入力してください。"
+# puts "最初の数字、二番目の数字、求めたい数を入力してください。"
+
+# x = gets.to_i
+# y = gets.to_i
+# z = gets.to_i
+
+# puts "結果は・・・"
+
+# p fibo(x, y, z)
+
+# def toribo(a, b, c, d)
+#   i = 0
+#   ans = []
+#   ans << a
+#   ans << b
+#   ans << c
+#   while i < d - 3 do
+#     ans << (ans[i] + ans[i + 1] + ans[i + 2])
+#     i += 1
+#   end
+#   return ans
+# end
+
+# puts "トリボナッチ数列を用い、数字を算出します。"
+# puts "最初の数字3つと、求めたい数字の数を入力してください。"
+
+# a = gets.to_i
+# b = gets.to_i
+# c = gets.to_i
+# d = gets.to_i
+
+# puts "結果は・・・"
+
+# p toribo(a, b, c, d)
+
+# puts "終了します。"
+
 
