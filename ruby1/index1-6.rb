@@ -910,4 +910,39 @@
 
 # puts "FizzBuzzゲームを終了します。"
 
+# def heihou(x)
+#   ans = x ** (1/2.0)
+#   return ans
+# end
+
+# puts heihou(3)
+
+# def hanoi(n)
+#   t = (2 ** n) -1
+#   return t
+# end
+
+# puts hanoi(3)
+
+def kazuate
+  result = rand(10)
+  puts "数当てゲームを開始します。"
+  puts "0~9までの好きな数字を入力してください。"
+  loop do
+    ans = gets.to_i
+    if result == ans
+      puts "#{ans}ですね！正解です。"
+      break
+    elsif ans < result
+      puts "#{ans}よりも大きいです。"
+    elsif ans > result
+      puts "#{ans}よりも小さいです。"
+    else
+      puts "0~9の数字を入力してください"
+    end
+  end
+  puts "数当てゲームを終了します。"
+end
+
+kazuate
 
