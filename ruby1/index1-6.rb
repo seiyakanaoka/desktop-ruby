@@ -839,4 +839,20 @@ p b
 # end
 # Palindrome Numberの答え
 
+# roman_to_int(s)の答え
+
+# def roman_to_int(s)
+#   ret=0
+#   ref ={"I"=>1,"V"=>5,"X"=>10,"L"=>50,"C"=>100,"D"=>500,"M"=>1000}
+#   len = s.length
+#   (0..len-1).each do |i|
+#       if i == len-1 || ref[s[i+1]] <= ref[s[i]]
+#           ret += ref[s[i]]
+#       else
+#           ret -= ref[s[i]]
+#       end
+#   end
+#   return ret
+# end
+
 
