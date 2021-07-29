@@ -755,6 +755,14 @@ p b
 #   nums.each_with_index do |n1, index1|
 #       h[n1] = index1
 #   end
+# 例
+# h[2] = 0
+# h[7] = 1
+# h[11] = 2
+# h[15] = 3
+
+
+
 #   nums.each_with_index do |c2, index2|
 #       tmp = target - c2
 #       if h[tmp].nil? || index2 == h[tmp]
@@ -764,3 +772,71 @@ p b
 #       end
 #   end
 # end
+
+# 例
+# tmp = 9 - 2  ・・・・・    7
+# if h[7].nil? || 0 == h[7]    ここではインデックス番号を求めに行ってるわけではない。h[7]という値を探している
+                                # なぜか？？一つ目のEach文で複数の値をハッシュの中に保存し、二つ目のEach文で
+                                # Targetから引いた値を算出し、そのキーと繰り返しているキーのわが一緒なものをReturnする
+                                # つまり、ハッシュの「値」ではなく、「キー」で計算しているだけ。
+#   next
+# else
+#   return [index2, h[7]]
+# end
+
+# nums = [2,7,11,15], target = 9
+
+
+# def sum_of_pythagoras(sum)
+#   a = 1; b, c = a+1, a+2
+#   limit = sum
+#   loop do
+#     if (a + b + c) == sum and pythagoras?(a, b, c)
+#       return a, b, c
+#     end
+#     c += 1
+#     if c > limit
+#       b += 1; c = b + 1
+#     end
+#     if b > limit/2
+#       a += 1; b = a + 1; c = b + 1
+#     end
+#     return nil if a > limit/3
+#   end
+# end
+# def pythagoras?(a, b, c)
+#   return true if (a ** 2 + b ** 2) == c ** 2
+#   false
+# end
+# t =  Time.now
+# a, b, c = sum_of_pythagoras(1000)
+# puts "#{a} * #{b} * #{c} = #{a*b*c}" 
+
+# def reverse(x)
+#   if x.positive?
+#     y = x.to_s.reverse.to_i
+#   else
+#     y = x.to_s.reverse.to_i*-1
+#   end
+#   return  0 if ( y > 2147483646 || y < -2147483647)
+#   y
+# end
+
+# puts reverse(123)
+
+# reverse integerの答え
+
+# def is_palindrome(x)
+#   if x.negative?
+#       return false
+#   else
+#       if x.to_s.reverse == x.to_s
+#           return true
+#       else
+#           return false
+#       end
+#   end
+# end
+# Palindrome Numberの答え
+
+
