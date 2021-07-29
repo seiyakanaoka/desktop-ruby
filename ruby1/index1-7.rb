@@ -23,4 +23,25 @@
 
 # p aho
 
+def soeji(x)
+  y = x.sort
+  i = 0
+  z = []
+  while i < 3 do
+    z << y.pop
+    i += 1
+  end
+
+  z.each_with_index do |num1, a|
+    x.each_with_index do |num2, b|
+      if num1 != num2
+        next
+      else
+        puts "#{b} -> #{num2}"
+      end
+    end
+  end
+end
+
+soeji([12, 6, 8, 3, 10, 1, 0, 9])
 
