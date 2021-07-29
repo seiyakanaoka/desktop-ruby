@@ -9,6 +9,18 @@
 # puts loops(3, 4)
 # puts Time.now - t
 
+# def aho
+#   result = []
+#   (1..100).each do |i|
+#     if i % 3 == 0 || i.to_s.include?("3")
+#       result << "Aho"
+#     else
+#       result << i
+#     end
+#   end
+#   return result
+# end
 
+# p aho
 
 
