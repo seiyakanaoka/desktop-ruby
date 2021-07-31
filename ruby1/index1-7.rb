@@ -54,3 +54,17 @@
 
 # hiragana
 
+
+
+
+
+
+
+
+
+
+
+# p result.length
+
+# s = "12345".split('').map{|x| x.to_i * 3}
+# p s
