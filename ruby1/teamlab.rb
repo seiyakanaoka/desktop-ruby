@@ -104,16 +104,16 @@
 # 模範回答コード
 
 # count = []
-# model = (1..200000).map{|i| i.to_s.split('').map{|x| x.to_i}}
+# model = (1..20000).map{|i| i.to_s.split('').map{|x| x.to_i}}
 # (0..(model.length - 1)).each do |x|
-#   i = 0
+#   i = 1
 #   s = model[x].inject(&:*)
 #   loop do
 #     if s == 0
 #       break
 #     end
-#     s = s.to_s.split('').map{|x| x.to_i}.inject(&:*)
 #     i += 1
+#     s = s.to_s.split('').map{|x| x.to_i}.inject(&:*)
 #     if s < 10
 #       if 6 < i
 #         break
