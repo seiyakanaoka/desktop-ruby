@@ -1,6 +1,6 @@
 # チームラボプログラミングテスト
 
-# 第一問
+# ------------- 第1問 -------------
 
 # t = 0
 # (1..99).each do |i|
@@ -9,25 +9,18 @@
 
 # puts t
 
-
-
-# 第二問
-
+# ------------- 第2問 -------------
 
 # def toribo(a, b, c, d)
 #   i = 0
 #   ans = []
-#   ans << a
-#   ans << b
-#   ans << c
+#   ans = a ,b, c
 #   while i < d - 3 do
 #     ans << (ans[i] + ans[i + 1] + ans[i + 2])
 #     i += 1
 #   end
 #   return ans
 # end
-
-# puts
 
 # a = gets.to_i
 # b = gets.to_i
@@ -36,14 +29,11 @@
 
 # p toribo(a, b, c, d)
 
-
-
-
-# 第３問
+# ------------- 第３問 -------------
 
 # t = 0
 # s = 0
-# (1..4989190).each do |i|
+# (1..5000000).each do |i|
 #   t += (1.0 / (i))
 #   if t >= 15
 #     s = i
@@ -53,10 +43,7 @@
 # puts t
 # puts s
 
-
-
-
-# 第４問
+# ------------- 第４問 -------------
 
 # def nabeatu
 #   result = 0
@@ -72,9 +59,7 @@
 
 # puts nabeatu
 
-
-
-# 第５問
+# ------------- 第５問 -------------
 
 # 元コード（解けなかったコード）
 
@@ -100,34 +85,25 @@
 
 # p u
 
-
-# 模範回答コード
+# ------------- 模範回答(仮)コード -------------
 
 # count = []
 # model = (1..20000).map{|i| i.to_s.split('').map{|x| x.to_i}}
 # (0..(model.length - 1)).each do |x|
 #   i = 1
-#   s = model[x].inject(&:*)
+#   s = model[x].inject(:*)
+#   next if s == 0
 #   loop do
-#     if s == 0
-#       break
-#     end
 #     i += 1
-#     s = s.to_s.split('').map{|x| x.to_i}.inject(&:*)
-#     if s < 10
-#       if 6 < i
-#         break
-#       elsif i < 6
-#         break
-#       else
-#         count << model[x].map{|i| i.to_s}.join.to_i
-#         break
-#       end
+#     s = s.to_s.split('').map{|y| y.to_i}.inject(:*)
+#     next if s > 9
+#     if i == 6
+#       count << model[x].map{|i| i.to_s}.join.to_i
+#       break
 #     else
-#       next
+#       break
 #     end
 #   end
 # end
 
-# p count
-
+# p count.size
