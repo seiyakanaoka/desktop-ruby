@@ -87,23 +87,23 @@
 
 # ------------- 模範回答(仮)コード -------------
 
-# count = []
-# model = (1..20000).map{|i| i.to_s.split('').map{|x| x.to_i}}
-# (0..(model.length - 1)).each do |x|
-#   i = 1
-#   s = model[x].inject(:*)
-#   next if s == 0
-#   loop do
-#     i += 1
-#     s = s.to_s.split('').map{|y| y.to_i}.inject(:*)
-#     next if s > 9
-#     if i == 6
-#       count << model[x].map{|i| i.to_s}.join.to_i
-#       break
-#     else
-#       break
-#     end
-#   end
-# end
+count = []
+model = (1..20000).map{|i| i.to_s.split('').map{|x| x.to_i}}
+(0..(model.length - 1)).each do |x|
+  kaisu = 1
+  sum = model[x].inject(:*)
+  next if sum == 0
+  loop do
+    kaisu += 1
+    sum = sum.to_s.split('').map{|y| y.to_i}.inject(:*)
+    next if sum > 9
+    if kaisu == 6
+      count << model[x].map{|i| i.to_s}.join.to_i
+      break
+    else
+      break
+    end
+  end
+end
 
-# p count.size
+p count.size
