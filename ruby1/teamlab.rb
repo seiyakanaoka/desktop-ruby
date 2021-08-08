@@ -43,6 +43,15 @@
 # puts t
 # puts s
 
+# t = 0
+# s = 0
+# while t < 15
+#   s += 1
+#   t += (1.0 / (s))
+# end
+# puts t
+# puts s
+
 # ------------- 第４問 -------------
 
 # def nabeatu
