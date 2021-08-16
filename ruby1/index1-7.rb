@@ -68,3 +68,49 @@
 
 # s = "12345".split('').map{|x| x.to_i * 3}
 # p s
+
+# person = Array.new
+# person[0] = "田中一郎"
+# person[1] = "佐藤次郎"
+# person[2] = "木村三郎"
+# p person[1]
+
+# person  = Hash.new
+# person["tanaka"] = "田中一郎"
+# person["satou"] = "佐藤次郎"
+# person["kimura"] = "木村三郎"
+# p person["satou"]
+
+# h1 = Hash.new("5")
+# p h1["not_key"]
+
+# h = Hash.new
+# h.store("R", "Ruby")
+# p h.fetch("R")
+
+# h = {"a" => "b", "c" => "d"}
+# p h.keys
+# p h.values
+# p h.to_a
+
+# h = Hash.new do |hash, key|
+#   hash[key] = key.upcase
+# end
+# h["a"] = "b"
+# p h["a"]
+# p h["x"]
+# p h["y"]
+
+# h = Hash.new do |hash, key|
+#   hash[key] = key.upcase
+# end
+# p h.fetch("x", "(undif)")
+
+# h = {"a" => "b", "c" => "d"}
+# p h.key?("a")
+# p h.has_key?("a")
+# p h.include?("z")
+# p h.member?("z")
+# p h.length
+# p h.size
+

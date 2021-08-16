@@ -31,26 +31,26 @@
 
 # ------------- 第３問 -------------
 
-t = 0
-s = 0
-(1..5000000).each do |i|
-  t += (1.0 / (i))
-  if t >= 15
-    s = i
-    break
-  end
-end
-puts t
-puts s
+# t = 0
+# s = 0
+# (1..5000000).each do |i|
+#   t += (1.0 / (i))
+#   if t >= 15
+#     s = i
+#     break
+#   end
+# end
+# puts t
+# puts s
 
-total = 0
-num = 0
-while total < 15
-  num += 1
-  total += (1.0 / (num))
-end
-puts total
-puts num
+# total = 0
+# num = 0
+# while total < 15
+#   num += 1
+#   total += (1.0 / (num))
+# end
+# puts total
+# puts num
 
 # ------------- 第４問 -------------
 
