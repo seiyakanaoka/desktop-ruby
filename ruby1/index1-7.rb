@@ -162,3 +162,11 @@
 #   end
 #   return hash
 # end
+
+pattern = "a[0]=1+2*3"
+regexp1 = Regexp.new(pattern)
+regexp2 = Regexp.new(Regexp.escape(pattern))
+p regexp1
+p regexp2
+p (regexp1 =~ "a[0]=1+2*3")
+p (regexp2 =~ "a[0]=1+2*3")
