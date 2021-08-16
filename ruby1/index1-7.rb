@@ -145,3 +145,20 @@
 # p count.sort_by{|c| p c[1]}
 # p count.sort_by{|c| p c}
 
+# wday = {"sunday": "日曜日", "monday": "月曜日", "tuesday": "火曜日", "wednesday": "水曜日", "thursday": "木曜日", "friday": "金曜日", "saturday": "土曜日"}
+# puts wday[:sunday]
+# p wday.size
+
+# wday.each do |key, value|
+#   puts "「#{key}」は#{value}のことです。"
+# end
+
+# def str2hash(str)
+#   hash = Hash.new()
+#   array = str.split(/\s+/)
+#   while key = array.shift
+#     value = array.shift
+#     hash[key] = value
+#   end
+#   return hash
+# end
