@@ -163,10 +163,23 @@
 #   return hash
 # end
 
-pattern = "a[0]=1+2*3"
-regexp1 = Regexp.new(pattern)
-regexp2 = Regexp.new(Regexp.escape(pattern))
-p regexp1
-p regexp2
-p (regexp1 =~ "a[0]=1+2*3")
-p (regexp2 =~ "a[0]=1+2*3")
+# pattern = "a[0]=1+2*3"
+# regexp1 = Regexp.new(pattern)
+# regexp2 = Regexp.new(Regexp.escape(pattern))
+# p regexp1
+# p regexp2
+# p (regexp1 =~ "a[0]=1+2*3")
+# p (regexp2 =~ "a[0]=1+2*3")
+
+# /[A-Za-z0-9_-]*/
+# /[A-Za-z0-9]*\.[a-z]+/
+
+# ans = "正規表現は難しい！なんて難しいんだ！"
+# p ans.gsub("難しい", "簡単").gsub("簡単んだ", "簡単なんだ")
+
+# def word_capitalize(str)
+#   return str.split(/\-/).collect{|w| w.capitalize}.join('-')
+# end
+
+# puts word_capitalize("aaa-bbb-ccc")
+
