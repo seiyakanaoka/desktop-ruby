@@ -114,3 +114,34 @@
 # p h.length
 # p h.size
 
+# table = {"A" => {"a" => "x", "b" => "y"}, "B" => {"a" => "v",  "b" => "w"}}
+# p table["A"]["a"]
+# p table["B"]["a"]
+
+# p ({"a"=> "x"}.merge({"b" => "y"}))
+
+# counts = Hash.new(0)
+
+# File.open(ARGV[0]) do |f|
+#   f.each_line do |line|
+#     words = line.split
+#     words.each do |word|
+#       counts[word] += 1
+#     end
+#   end
+# end
+
+# sorted = counts.sort_by {|c| c[1]}
+# sorted.each do |word, count|
+#   puts "#{word}: #{count}"
+# end
+
+# count = {"a" => 3, "b" => 2, "c" =>  5, "d" => 1, "e" => 4}
+# p count.sort_by{|c| c[0]}
+# p count.sort_by{|c| c[1]}
+# p count.sort_by{|c| c[2]}
+# p count.sort_by{|c| c[3]}
+# p count.sort_by{|c| c[4]}
+# p count.sort_by{|c| p c[1]}
+# p count.sort_by{|c| p c}
+
