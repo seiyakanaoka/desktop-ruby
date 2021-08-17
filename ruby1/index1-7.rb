@@ -183,3 +183,21 @@
 
 # puts word_capitalize("aaa-bbb-ccc")
 
+# 3.times do |i|
+#   $stdout.puts "#{Random.rand}"
+#   $stderr.puts "#{i + 1 }回出力しました。"
+# end
+
+# 3.times do |i|
+#   puts "#{Random.rand}"
+#   puts "#{i + 1 }回出力しました。"
+# end
+
+# if $stdin.tty?
+#   puts "Stdin is a TTY."
+# else
+#   puts "Stdin is not a TTY."
+# end
+
+
+
